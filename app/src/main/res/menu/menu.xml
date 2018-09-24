@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/calculator"
+        android:title="@string/calculator"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/unit"
+        android:title="@string/unit_converter"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/taxCalculator"
+        android:title="@string/tax_calculator"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/discountCalculator"
+        android:title="@string/discount_calculator"
+        app:showAsAction="never" />
     <item
         android:id="@+id/settings"
         android:title="@string/settings"

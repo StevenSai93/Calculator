@@ -26,6 +26,15 @@
             android:screenOrientation="portrait"/>
 
         <activity
+            android:name=".activities.UnitActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.TaxActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.DiscountActivity"
+            android:screenOrientation="portrait"/>
+        <activity
             android:name=".activities.WidgetConfigureActivity"
             android:screenOrientation="portrait"
             android:theme="@style/MyWidgetConfigTheme">

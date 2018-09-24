@@ -22,6 +22,14 @@
         This app is just one piece of a bigger series of apps. You can find the rest of them at https://www.simplemobiletools.com
     </string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="calculator">Calculator</string>
+    <string name="unit_converter">Unit Converter</string>
+    <string name="taxcalculator">TaxCalculator</string>
+    <string name="tax_calculator">Tax Calculator</string>
+    <string name="discount_calculator">Discount Calculator</string>
+
     <!--
         Haven't found some strings? There's more at
         https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res

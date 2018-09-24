@@ -3,6 +3,7 @@ package com.simplemobiletools.calculator.activities
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.support.v4.app.AppLaunchChecker
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -91,6 +92,10 @@ class MainActivity : SimpleActivity(), Calculator {
         when (item.itemId) {
             R.id.settings -> launchSettings()
             R.id.about -> launchAbout()
+            R.id.calculator -> launchCalculator()
+            R.id.unit -> launchUnit()
+            R.id.discountCalculator -> launchDiscount()
+            R.id.taxCalculator -> launchTax()
             else -> return super.onOptionsItemSelected(item)
         }
         return true
@@ -106,6 +111,21 @@ class MainActivity : SimpleActivity(), Calculator {
         if (vibrateOnButtonPress) {
             view.performHapticFeedback()
         }
+    }
+
+    private fun launchCalculator(){
+        startActivity(Intent(applicationContext, MainActivity:: class.java))
+    }
+
+    private fun launchUnit() {
+        startActivity(Intent(applicationContext, UnitActivity::class.java))
+    }
+    private fun launchDiscount(){
+        startActivity(Intent(applicationContext, DiscountActivity:: class.java))
+    }
+
+    private fun launchTax(){
+        startActivity(Intent(applicationContext, TaxActivity:: class.java))
     }
 
     private fun launchSettings() {
