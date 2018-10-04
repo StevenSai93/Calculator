@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.Toast
 import com.simplemobiletools.calculator.BuildConfig
 import com.simplemobiletools.calculator.R
 import com.simplemobiletools.calculator.extensions.config
@@ -14,6 +15,7 @@ import com.simplemobiletools.commons.helpers.LICENSE_AUTOFITTEXTVIEW
 import com.simplemobiletools.commons.helpers.LICENSE_ESPRESSO
 import com.simplemobiletools.commons.helpers.LICENSE_ROBOLECTRIC
 import com.simplemobiletools.commons.models.FAQItem
+import kotlinx.android.synthetic.main.activity_discount.*
 
 class DiscountActivity : SimpleActivity() {
 
@@ -24,6 +26,15 @@ class DiscountActivity : SimpleActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_discount)
         appLaunched(BuildConfig.APPLICATION_ID)
+
+        btn_discount.setOnClickListener{
+            val price: Double = disPrice.text.toString().toDouble()
+            val discount: Double = disPercentage.text.toString().toDouble()
+            val discountPrice = price - (price * (discount/100))
+            disResult.setText(discountPrice.toString())
+            Toast.makeText(this,discountPrice.toString(), Toast.LENGTH_LONG).show()
+        }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

@@ -12,6 +12,7 @@ const val ROOT = "root"
 const val DECIMAL = "decimal"
 const val CLEAR = "clear"
 const val RESET = "reset"
+const val MODULO = "modulo"
 
 const val NAN = "NaN"
 const val ZERO = "zero"
@@ -24,3 +25,4 @@ const val SIX = "six"
 const val SEVEN = "seven"
 const val EIGHT = "eight"
 const val NINE = "nine"
+

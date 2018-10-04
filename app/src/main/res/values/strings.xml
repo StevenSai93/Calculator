@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Simple Calculator</string>
+    <string name="app_name">Calculator</string>
     <string name="app_launcher_name">Calculator</string>
 
     <!-- Settings -->
@@ -34,4 +34,17 @@
         Haven't found some strings? There's more at
         https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
     -->
+    <!-- Array List for Unit Converter-->
+    <string-array name="length">
+        <item>Kilometer</item>
+        <item>Meter</item>
+        <item>Centimeter</item>
+        <item>Millimeter</item>
+        <item>Micrometer</item>
+        <item>Nanometer</item>
+        <item>Mile</item>
+        <item>Foot</item>
+        <item>Inch</item>
+    </string-array>
+
 </resources>
