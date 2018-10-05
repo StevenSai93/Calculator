@@ -4,13 +4,10 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
 import android.widget.Toast
 import com.simplemobiletools.calculator.BuildConfig
 import com.simplemobiletools.calculator.R
-import com.simplemobiletools.calculator.extensions.config
 import com.simplemobiletools.commons.extensions.appLaunched
-import com.simplemobiletools.commons.extensions.performHapticFeedback
 import com.simplemobiletools.commons.helpers.LICENSE_AUTOFITTEXTVIEW
 import com.simplemobiletools.commons.helpers.LICENSE_ESPRESSO
 import com.simplemobiletools.commons.helpers.LICENSE_ROBOLECTRIC
@@ -52,18 +49,6 @@ class TaxActivity : SimpleActivity() {
             else -> return super.onOptionsItemSelected(item)
         }
         return true
-    }
-
-    private fun storeStateVariables() {
-        config.apply {
-            storedTextColor = textColor
-        }
-    }
-
-    private fun checkHaptic(view: View) {
-        if (vibrateOnButtonPress) {
-            view.performHapticFeedback()
-        }
     }
 
     private fun launchCalculator(){
