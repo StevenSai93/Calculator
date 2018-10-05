@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
@@ -10,7 +12,7 @@
         android:gravity="center"
         android:text="Tax Calculator"
         android:textSize="25sp"
-        android:textColor="@color/white"
+        android:textColor="@color/color_primary"
         android:textStyle="bold"/>
 
     <LinearLayout
@@ -21,6 +23,7 @@
 
         <TextView
             android:id="@+id/taxViewPrice"
+            style="@style/MyButton"
             android:layout_width="186dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -48,6 +51,7 @@
 
         <TextView
             android:id="@+id/taxViewPercentage"
+            style="@style/MyButton"
             android:layout_width="186dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -74,6 +78,7 @@
 
         <TextView
             android:id="@+id/taxViewResult"
+            style="@style/MyButton"
             android:layout_width="186dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -97,7 +102,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Calculate"
-        android:background="@color/md_orange"
+        android:background="@color/color_primary"
+        android:textSize="@dimen/button_text_size"
         />
 
 </LinearLayout>

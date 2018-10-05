@@ -15,8 +15,6 @@ import com.simplemobiletools.commons.models.FAQItem
 import kotlinx.android.synthetic.main.activity_tax.*
 
 class TaxActivity : SimpleActivity() {
-    private var storedTextColor = 0
-    private var vibrateOnButtonPress = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,8 +28,8 @@ class TaxActivity : SimpleActivity() {
             taxResult.setText(result.toString())
             Toast.makeText(this, result.toString(), Toast.LENGTH_LONG).show()
         }
-
     }
+
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu, menu)

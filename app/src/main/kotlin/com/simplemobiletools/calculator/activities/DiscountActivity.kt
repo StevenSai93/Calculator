@@ -16,9 +16,6 @@ import kotlinx.android.synthetic.main.activity_discount.*
 
 class DiscountActivity : SimpleActivity() {
 
-    private var storedTextColor = 0
-    private var vibrateOnButtonPress = true
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_discount)
