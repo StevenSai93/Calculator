@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.Toast
 import com.simplemobiletools.calculator.BuildConfig
 import com.simplemobiletools.calculator.R
 import com.simplemobiletools.calculator.extensions.config
@@ -14,6 +15,7 @@ import com.simplemobiletools.commons.helpers.LICENSE_AUTOFITTEXTVIEW
 import com.simplemobiletools.commons.helpers.LICENSE_ESPRESSO
 import com.simplemobiletools.commons.helpers.LICENSE_ROBOLECTRIC
 import com.simplemobiletools.commons.models.FAQItem
+import kotlinx.android.synthetic.main.activity_tax.*
 
 class TaxActivity : SimpleActivity() {
     private var storedTextColor = 0
@@ -23,6 +25,14 @@ class TaxActivity : SimpleActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tax)
         appLaunched(BuildConfig.APPLICATION_ID)
+
+        btn_tax.setOnClickListener{
+            val price: Double = taxPrice.text.toString().toDouble()
+            val tax: Double = taxPercentage.text.toString().toDouble()
+            val result = price + (price * (tax/100))
+            taxResult.setText(result.toString())
+            Toast.makeText(this, result.toString(), Toast.LENGTH_LONG).show()
+        }
 
     }
 
