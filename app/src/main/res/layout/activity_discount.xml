@@ -45,7 +45,9 @@
             android:ems="10"
             android:inputType="numberDecimal"
             android:gravity="center_vertical|right"
-            android:text="0" />
+            android:text="0"
+            android:textColor="@color/color_primary"
+            android:textSize="20sp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -73,6 +75,8 @@
             android:ems="10"
             android:inputType="numberDecimal"
             android:gravity="center_vertical|right"
+            android:textColor="@color/color_primary"
+            android:textSize="20sp"
             android:text="0"/>
     </LinearLayout>
     <LinearLayout
@@ -99,7 +103,9 @@
             android:layout_weight="1"
             android:gravity="center_vertical|right"
             android:paddingLeft="20dp"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textColor="@color/color_primary"
+            />
     </LinearLayout>
 
     <Button

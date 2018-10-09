@@ -6,30 +6,74 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="15dp"
         android:gravity="center"
         android:text="Unit Converter"
-        android:textSize="25sp" />
+        android:textSize="25sp"
+        android:textColor="@color/color_primary"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Length"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/color_primary"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtUnit1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center_vertical|right"
+            android:inputType="numberDecimal"
+            android:text="1"
+            android:textColor="@color/color_primary"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/unitResult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/color_primary"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         android:orientation="horizontal">
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/spinnerUnit1"
             android:layout_width="218dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
-
-        <EditText
-            android:id="@+id/editText2"
-            android:layout_width="190dp"
-            android:layout_height="69dp"
             android:layout_weight="1"
-            android:ems="10"
-            android:inputType="numberDecimal" />
+            android:textColor="@color/color_primary"
+            android:textSize="20sp"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerUnit2"
+            android:layout_width="218dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/color_primary"
+            android:textSize="20sp"/>
 
     </LinearLayout>
-
 </LinearLayout>
